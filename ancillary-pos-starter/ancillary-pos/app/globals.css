@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --aa-red: #D10028; }
+html, body { height: 100%; background: #f6f7fb; }
+.blur-hero::before{
+  content:""; position:absolute; inset:0;
+  background: url("/cabin.jpg") center/cover no-repeat;
+  filter: blur(2px) brightness(.65); transform: scale(1.02); z-index:-1;
+}
